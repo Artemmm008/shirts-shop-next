@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { SlidersHorizontal, User, ShoppingBag, Shield } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/hooks/useAuth";
@@ -13,7 +13,7 @@ import CatalogDrawer from "../CatalogDrawer/CatalogDrawer";
 import AdminDrawer from "../AdminDrawer/AdminDrawer";
 import css from "./Header.module.css";
 
-export default function Header() {
+function HeaderContent() {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -121,5 +121,13 @@ export default function Header() {
         />
       )}
     </>
+  );
+}
+
+export default function Header() {
+  return (
+    <Suspense fallback={null}>
+      <HeaderContent />
+    </Suspense>
   );
 }
