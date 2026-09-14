@@ -2,23 +2,19 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function proxy(request: NextRequest) {
-    const { pathname } = request.nextUrl;
-    const hasSession = request.cookies.has("accessToken") || request.cookies.has("refreshToken");
-    const userRole = request.cookies.get("role")?.value;
+  const { pathname } = request.nextUrl;
 
-    if (pathname.startsWith('/admin')) {
-        if (!hasSession) {
-           return NextResponse.redirect(new URL("/sign-in", request.url))
-        };
+  if (pathname.startsWith("/admin")) {
+    const hasCookies = request.headers.get("cookie");
 
-        if (userRole && userRole !== "admin") {
-            return NextResponse.redirect(new URL("/", request.url))
-        }
-    };
+    if (!hasCookies) {
+      return NextResponse.redirect(new URL("/sign-in", request.url));
+    }
+  }
 
-    return NextResponse.next();
-};
+  return NextResponse.next();
+}
 
 export const config = {
-    matcher: ['/admin/:path*'],
+  matcher: ["/admin/:path*"],
 };
