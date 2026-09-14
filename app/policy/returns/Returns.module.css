@@ -1,0 +1,37 @@
+.page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+.text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 16px 0;
+}
+
+.link {
+    font-size: 0.9rem;
+    color: #000;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.link:hover {
+    opacity: 0.6;
+}

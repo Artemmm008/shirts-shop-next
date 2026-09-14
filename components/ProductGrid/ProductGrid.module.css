@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 16px;
+    width: 100%;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    width: 100%;
+}
+
+.emptyText {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}

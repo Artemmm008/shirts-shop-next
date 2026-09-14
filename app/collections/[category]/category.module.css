@@ -1,0 +1,33 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #111827;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.count {
+    font-size: 0.95rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}

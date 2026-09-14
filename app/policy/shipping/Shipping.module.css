@@ -1,0 +1,19 @@
+.page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+.text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}

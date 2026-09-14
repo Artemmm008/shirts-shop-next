@@ -1,0 +1,61 @@
+.page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.link {
+    font-size: 0.95rem;
+    color: #000;
+    text-decoration: underline;
+    width: fit-content;
+    transition: opacity 0.2s ease;
+}
+
+.link:hover {
+    opacity: 0.6;
+}
+
+.schedule {
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.scheduleTitle {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.scheduleText {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 4px;
+}

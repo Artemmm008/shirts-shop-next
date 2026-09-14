@@ -1,0 +1,87 @@
+.ordersPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    box-sizing: border-box;
+}
+
+.ordersList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.orderCard {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.orderCard:hover {
+    border-color: #000000;
+    background-color: #f9fafb;
+}
+
+.orderCard p {
+    margin: 0;
+}
+
+.orderHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #111827;
+}
+
+.orderStatus {
+    color: #166534;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.ordersMessage {
+    color: #6b7280;
+    text-align: center;
+}
+
+.error {
+    margin: 16px 0 0;
+    color: #dc2626;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.actionsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.orderStatusSelect {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.orderStatusSelect:hover {
+    border-color: #000000;
+}

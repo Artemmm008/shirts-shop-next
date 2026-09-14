@@ -1,0 +1,100 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.navBtn {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.navLink {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+
+.logo {
+    font-family: var(--font-main);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--foreground, #000000);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}
+
+.iconBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    position: relative;
+}
+
+.iconBtn:hover {
+    background-color: #f3f4f6;
+}
+
+.badge {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #16841f;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

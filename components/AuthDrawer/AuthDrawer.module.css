@@ -1,0 +1,271 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    animation: fadeIn 0.25s ease-out forwards;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+.header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.closeBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.closeBtn:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.profileField {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profileField span {
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+.profileField span {
+    color: #000000;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.ordersButton,
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 42px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #000000;
+    font: inherit;
+    cursor: pointer;
+}
+
+.ordersButton {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.ordersButton:hover,
+.backButton:hover {
+    border-color: #000000;
+    background: #f9fafb;
+}
+
+.ordersPanel {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.backButton {
+    align-self: flex-start;
+    padding: 0 12px;
+}
+
+.ordersList {
+    display: flex;
+    max-height: 440px;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.orderCard {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.orderCard:hover {
+    border-color: #000000;
+    background-color: #f9fafb;
+}
+
+.orderCard p {
+    margin: 0;
+}
+
+.orderHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #111827;
+}
+
+.orderStatus {
+    color: #6f00ff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.ordersMessage {
+    color: #6b7280;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #000000;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input::placeholder {
+    color: #9ca3af;
+}
+
+.input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 1px #000000;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+    box-shadow: 0 0 8px #009e15;
+}
+
+.submitBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.error {
+    margin: 16px 0 0;
+    color: #dc2626;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.switchBtn {
+    background: transparent;
+    border: none;
+    color: #4b5563;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: auto;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.switchBtn:hover {
+    color: #000000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,181 @@
+.container {
+    width: 100%;
+    max-width: 580px;
+    margin: 40px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.backLink:hover {
+    opacity: 0.6;
+}
+
+.title {
+    margin: 0 0 24px;
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field label {
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #000000;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.sizesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sizeChip {
+    min-width: 48px;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sizeChipActive {
+    border-color: #000000;
+    background: #000000;
+    color: #ffffff;
+}
+
+.fileLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border: 1px dashed #d1d5db;
+    background-color: #f9fafb;
+    color: #000000;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.fileLabel:hover {
+    border-color: #000000;
+    background-color: #f3f4f6;
+}
+
+.fileInput {
+    display: none;
+}
+
+.checkboxField {
+    padding-top: 4px;
+}
+
+.checkboxLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #000000;
+    user-select: none;
+}
+
+.checkboxInput {
+    width: 18px;
+    height: 18px;
+    accent-color: #000000;
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 12px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.saveButton {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 0;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.saveButton:hover:not(:disabled) {
+    box-shadow: 0 0 8px #009e15;
+}
+
+.saveButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

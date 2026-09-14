@@ -1,0 +1,81 @@
+.page {
+    width: 1200px;
+    padding: 0 20px 80px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.imageItem {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.imageItem img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+}
+
+.brand {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-top: 48px;
+    text-transform: uppercase;
+}
+
+.subheading {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.quote {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 580px;
+}
+
+.footerCall {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCall .brand {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.callText {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+    font-weight: 500;
+}

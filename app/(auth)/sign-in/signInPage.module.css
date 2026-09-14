@@ -1,0 +1,27 @@
+.page {
+	display: flex;
+	justify-content: center;
+}
+
+.div {
+    padding: 50px 0;
+}
+
+.div h1 {
+	margin: 0;
+	color: #111827;
+	font-size: 2rem;
+	line-height: 1.15;
+}
+
+.backLink {
+	display: block;
+	margin-top: 28px;
+	color: #6b7280;
+	font-size: 0.85rem;
+	text-align: center;
+}
+
+.backLink:hover {
+	color: #111827;
+}

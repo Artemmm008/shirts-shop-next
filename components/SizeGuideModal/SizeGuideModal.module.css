@@ -1,0 +1,57 @@
+.backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	background: rgb(0 0 0 / 40%);
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1001;
+	width: min(560px, calc(100% - 32px));
+	max-height: 80vh;
+	overflow: auto;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	box-shadow: 0 16px 48px rgb(0 0 0 / 20%);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 24px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.header h2 {
+	margin: 0;
+	color: #000000;
+	font-size: 1.1rem;
+}
+
+.closeBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border: 0;
+	background: transparent;
+	color: #4b5563;
+	cursor: pointer;
+}
+
+.content {
+	padding: 24px;
+}
+
+.guideText,
+.empty {
+	margin: 0;
+	color: #4b5563;
+	line-height: 1.7;
+	white-space: pre-line;
+}
