@@ -1,10 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Manrope } from 'next/font/google';
 import CartClientProvider from "@/components/CartClientProvider/CartClientProvider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { TanStackProvider } from "@/components/TanStackProvider/TanStackProvider";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 const manrope = Manrope({
   subsets: ['latin', 'cyrillic'],
