@@ -7,7 +7,6 @@ import Footer from "@/components/Footer/Footer";
 import { TanStackProvider } from "@/components/TanStackProvider/TanStackProvider";
 
 export const viewport: Viewport = {
-  width: "device-width",
   initialScale: 1,
 };
 
