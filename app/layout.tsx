@@ -8,6 +8,7 @@ import { TanStackProvider } from "@/components/TanStackProvider/TanStackProvider
 
 export const viewport: Viewport = {
   initialScale: 1,
+  maximumScale: 1,
 };
 
 const manrope = Manrope({
