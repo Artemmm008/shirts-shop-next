@@ -7,8 +7,8 @@ import Footer from "@/components/Footer/Footer";
 import { TanStackProvider } from "@/components/TanStackProvider/TanStackProvider";
 
 export const viewport: Viewport = {
+  width: 1200,
   initialScale: 1,
-  maximumScale: 1,
 };
 
 const manrope = Manrope({
