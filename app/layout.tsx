@@ -6,11 +6,6 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { TanStackProvider } from "@/components/TanStackProvider/TanStackProvider";
 
-export const viewport: Viewport = {
-  width: 1200,
-  initialScale: 1,
-};
-
 const manrope = Manrope({
   subsets: ['latin', 'cyrillic'],
   weight: ['400', '500', '600', '700'],

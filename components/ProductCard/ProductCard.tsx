@@ -18,7 +18,6 @@ export default function ProductCard({ product }: ProductCardProps) {
                     src={product.imageUrl?.[0] ? product.imageUrl[0] : "/small_logo.png"}
                     alt={product.title}
                     fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className={css.image}
                     loading="eager"
                 />

@@ -1,19 +1,16 @@
 .container {
 	display: grid;
-	grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+	grid-template-columns: 1fr 450px;
 	gap: 120px;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 48px 24px 80px;
 }
 
-.gallery {
-	min-width: 0;
-}
-
 .mainImage {
 	position: relative;
-	aspect-ratio: 4 / 5;
+	width: 400px;
+	height: 500px;
 	overflow: hidden;
 	background: #f3f4f6;
 }

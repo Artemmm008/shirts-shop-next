@@ -6,8 +6,8 @@
 
 .imageWrapper {
     position: relative;
-    width: 100%;
-    aspect-ratio: 4 / 5;;
+    width: 376px;
+    height: 470px;
     background-color: #f3f4f6;
     overflow: hidden;
     display: block;
@@ -42,6 +42,7 @@
     flex-direction: column;
     gap: 4px;
     padding-top: 12px;
+    text-align: center;
 }
 
 .title {
@@ -61,5 +62,5 @@
 .price {
     font-size: 0.875rem;
     font-weight: 400;
-    color: #6b7280;
+    color: #000000;
 }

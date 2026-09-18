@@ -82,7 +82,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                             alt={product.title}
                             fill
                             priority
-                            sizes="(max-width: 800px) 100vw, 55vw"
+                            unoptimized
                             className={css.image}
                         />
 
