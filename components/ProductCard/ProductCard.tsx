@@ -19,7 +19,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                     alt={product.title}
                     fill
                     className={css.image}
-                    loading="eager"
+                    loading="lazy"
                 />
 
                 {!product.inStock && (
