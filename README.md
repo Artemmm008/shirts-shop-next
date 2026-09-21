@@ -4,7 +4,7 @@
 
 > **Note:** Developed from scratch as a commercial project, including UI implementation, API architecture, database design, cloud media management, and Stripe integration.
 
-> **Backend Repository:** [ARCANE 21 REST API](https://github.com/Artemmm008/shirts-shop-node)
+> **Backend Repository:** [ARCANE 21 Backend](https://github.com/Artemmm008/shirts-shop-node)
 
 ---
 
