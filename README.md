@@ -1,4 +1,4 @@
-# ARCANE 21
+# ARCANE 21 (BETA)
 
 **A full-stack e-commerce web application built for a commercial clothing brand.**
 
@@ -27,6 +27,14 @@ The application is engineered as a production-grade e-commerce platform designed
 3. **Manage Cart.** Easily add or remove items with a single click. Your cart automatically saves in the browser, so items stay preserved even if you refresh or close the page.
 4. **Seamless Checkout.** Fast redirection to a secure Stripe payment flow with automated order confirmation.
 5. **Track Orders.** Customers can check their order history simply by opening the account/registration drawer—no registration required.
+
+## Test Payment Credentials
+You can test the full checkout flow using official Stripe test credentials.
+
+> **Note:** Use any valid future expiry date (e.g., `12/30`) and any 3-digit CVC (e.g., `123`).
+
+| **Successful Payment** | `4242 4242 4242 4242` | `123` |
+| **Declined Card** | `4000 0000 0000 0002` | `123` |
 
 ### For Administrators
 1. **Authentication.** Secure login to the admin control panel.
