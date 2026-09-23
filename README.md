@@ -34,6 +34,7 @@ You can test the full checkout flow using official Stripe test credentials.
 > **Note:** Use any valid future expiry date (e.g., `12/30`) and any 3-digit CVC (e.g., `123`).
 
 | **Successful Payment** | `4242 4242 4242 4242` | `123` |
+
 | **Declined Card** | `4000 0000 0000 0002` | `123` |
 
 ### For Administrators
