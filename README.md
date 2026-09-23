@@ -77,6 +77,6 @@ Product images are stored and served through Cloudinary:
 **Technology Stack:**
 
 * **Frontend:** Next.js · React · TypeScript · React Query · Axios · Zustand · CSS Modules
-* **Backend:** Node.js · Express.js · MongoDB
+* **Backend:** Node.js · Express.js · REST API · MongoDB
 * **Integrations:** Stripe SDK · Cloudinary SDK
 * **Infrastructure:** Vercel (Frontend) · Render (Backend)
